@@ -320,21 +320,36 @@
 
   /* ---------- responsivo ---------- */
   @media(max-width:860px){
-    section{padding:64px 0}
-    .hero-grid,.dream-grid,.cred,.offer-grid,.tcards,.frow,.author-grid{grid-template-columns:1fr;gap:40px}
+    html{font-size:15px}
+    body{font-size:16px;padding-bottom:0}
+    .wrap{padding:0 30px}
+    section{padding:56px 0}
+    nav{display:none}
+    .mbar{display:none}
+    .hero-grid,.dream-grid,.cred,.offer-grid,.tcards,.frow,.author-grid{grid-template-columns:1fr;gap:28px}
+    .hero-grid{gap:20px}
+    .hero{padding:28px 0 20px}
+    .hero-art{min-height:auto;margin-top:0}
+    .hero-cta .btn-lg{padding:14px 26px;font-size:.98rem}
     .author-photo{aspect-ratio:3/2;max-height:360px}
+    .author-photo img{object-position:center 60%}
     .author-grid .qmark{display:none}
     .frow.rev .ftext{order:0}
-    .hero-art{min-height:380px;margin-top:10px}
     .cred .photo,.gallery{min-height:320px}
     .icards{grid-template-columns:1fr}
     .gbox{flex-direction:column;text-align:center;gap:20px}
-    .mbar{display:flex}
-    body{padding-bottom:74px}
   }
   @media(max-width:520px){
     .icards{grid-template-columns:1fr}
-    .chip-2{left:-6px}
+    .hero-stack{width:66%}
+    .chip{padding:8px 11px;font-size:.72rem;gap:8px;border-radius:11px}
+    .chip .ic{width:26px;height:26px;border-radius:7px}
+    .chip .ic svg{width:14px;height:14px}
+    .chip b{font-size:.85rem}
+    .chip small{font-size:.64rem}
+    .chip-1{top:16%;right:-30px}
+    .chip-2{top:46%;left:-38px}
+    .chip-3{bottom:16%;right:-30px}
   }
 </style>
 </head>
@@ -529,7 +544,7 @@
         <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></span> Consultora financeira, mais de 200 famílias atendidas desde 2019</li>
         <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></span> Top 50 Influenciadores de Finanças do InfoMoney em 2025</li>
         <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></span> Construiu o próprio patrimônio começando aos 18 anos, com salário de estagiária</li>
-        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></span> Vive o método no próprio casamento: <strong>casal alinhado constrói junto</strong></li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Vive o método no próprio casamento: <strong>casal alinhado constrói junto</strong></span></li>
       </ul>
     </div>
   </div>
