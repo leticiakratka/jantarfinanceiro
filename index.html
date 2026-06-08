@@ -735,7 +735,7 @@
     counters.forEach(function(c){ cio.observe(c); });
   }
 
-  // cronômetro regressivo até a live (16/06 20h, horário de Brasília)
+  // cronômetro regressivo até a live (17/06 20h, horário de Brasília)
   (function(){
     var cd = document.getElementById('countdown');
     if(!cd) return;
@@ -766,6 +766,25 @@
     }
     tick();
     var timer = setInterval(tick, 1000);
+  })();
+
+  // repassa UTMs e click-ids da URL da LP para os links de checkout (atribuição de campanha)
+  (function(){
+    var sp = new URLSearchParams(window.location.search);
+    var keep = ['gclid','fbclid','gad_source','gbraid','wbraid','ttclid','msclkid','sck','src','xcod','ref'];
+    var fwd = [];
+    sp.forEach(function(v,k){
+      if(/^utm_/i.test(k) || keep.indexOf(k.toLowerCase()) > -1){ fwd.push([k,v]); }
+    });
+    if(!fwd.length) return;
+    var links = document.querySelectorAll('a[href*="voompcreators.com.br"]');
+    for(var i=0;i<links.length;i++){
+      try{
+        var u = new URL(links[i].href);
+        fwd.forEach(function(p){ u.searchParams.set(p[0], p[1]); });
+        links[i].href = u.toString();
+      }catch(e){}
+    }
   })();
 </script>
 
