@@ -580,17 +580,9 @@
 <section class="dream">
   <div class="wrap center reveal" style="max-width:680px">
     <span class="eyebrow" style="color:var(--amber-soft)">O bônus que muda tudo</span>
-    <h2 style="margin:0 auto 18px;max-width:22ch">Participe ao vivo do nosso Jantar Financeiro de junho!</h2>
+    <h2 style="margin:0 auto 18px;max-width:24ch">A aula que eu e meu marido gravamos ao vivo fazendo o Jantar Financeiro</h2>
 
-    <div class="countdown" id="countdown" data-deadline="2026-06-17T20:00:00-03:00" aria-live="polite">
-      <div class="cd-box"><span class="n" data-cd="days">00</span><span class="l">dias</span></div>
-      <div class="cd-box"><span class="n" data-cd="hours">00</span><span class="l">horas</span></div>
-      <div class="cd-box"><span class="n" data-cd="mins">00</span><span class="l">min</span></div>
-      <div class="cd-box"><span class="n" data-cd="secs">00</span><span class="l">seg</span></div>
-    </div>
-    <p style="color:rgba(243,233,220,.7);font-size:.86rem;margin-bottom:22px">Faltam pra abrir a mesa, ao vivo, no dia <strong style="color:var(--amber-soft)">17 de junho às 20h</strong></p>
-
-    <p style="color:rgba(243,233,220,.86)">Eu e meu marido vamos abrir nossa própria mesa pra vocês: mostrar ao vivo como conduzimos o nosso Jantar Financeiro, responder dúvidas em tempo real, e <strong>ajudar vocês a tirarem o primeiro jantar do papel.</strong></p>
+    <p style="color:rgba(243,233,220,.86)">A gente abriu a nossa própria mesa e conduziu o Jantar Financeiro do começo ao fim, explicando como montar o encontro, conduzir as 8 perguntas e <strong>tirar o primeiro jantar do papel.</strong> Ficou tudo gravado: quando vocês compram, recebem o acesso pra assistir no seu tempo, quantas vezes quiserem.</p>
   </div>
 </section>
 
@@ -612,7 +604,7 @@
         <div class="stack-item"><span>Templates das 8 perguntas + Ata do Jantar, pra imprimir e preencher</span><span class="val strike">R$ 57</span></div>
         <div class="stack-item"><span>Quiz dos 4 Modelos de Gestão</span><span class="val strike">R$ 47</span></div>
         <div class="stack-item"><span>Calendário dos 12 Jantares pra imprimir</span><span class="val strike">R$ 54</span></div>
-        <div class="stack-item bonus"><span>✦ Bônus: live com a Letícia e Pedro fazendo o Jantar Financeiro ao vivo</span><span class="val">incluso</span></div>
+        <div class="stack-item bonus"><span>✦ Bônus: aula gravada ao vivo com a Letícia e o marido fazendo o Jantar Financeiro</span><span class="val">incluso</span></div>
         <div class="stack-sum"><span>Tudo isso, separado, sairia por</span><span class="val strike">R$ 295</span></div>
       </div>
 
@@ -663,7 +655,7 @@
       <details><summary>E se a gente cuida do dinheiro de formas diferentes?</summary><div class="a">Ótimo ponto de partida. O método inclui <strong>os 4 modelos de gestão do casal</strong>, pra vocês escolherem juntos o que faz sentido, em vez de cada um seguir no automático.</div></details>
       <details><summary>Toda vez que a gente fala de dinheiro, a conversa azeda. Isso ajuda?</summary><div class="a">É justamente pra isso. O roteiro tira o peso do assunto: em vez de cobrança, vira uma conversa guiada, com vinho e sem celular. As perguntas conduzem, então ninguém precisa puxar o tema "do nada", e <strong>o dinheiro deixa de ser motivo de briga pra virar projeto em comum.</strong></div></details>
       <details><summary>Não temos tempo pra mais uma coisa.</summary><div class="a"><strong>São 90 minutos por mês.</strong> O tempo de um jantar. Essa é exatamente a ideia.</div></details>
-      <details><summary>Como recebo o acesso e a live?</summary><div class="a">Logo após a compra, vocês entram no grupo onde a gente organiza a live e disponibiliza tudo. <strong>O acesso ao material é imediato.</strong></div></details>
+      <details><summary>Como recebo o acesso e a aula?</summary><div class="a">Assim que a compra é confirmada, <strong>tudo é liberado na hora dentro da plataforma</strong>: o ebook, os templates e a aula completa. O acesso é imediato, é só entrar e começar.</div></details>
     </div>
   </div>
 </section>
@@ -673,7 +665,7 @@
   <div class="wrap reveal">
     <span class="eyebrow" style="color:var(--amber-soft)">Comece hoje</span>
     <h2>A próxima década do casamento de vocês está sendo construída agora.</h2>
-    <p style="color:rgba(243,233,220,.8);max-width:46ch;margin:14px auto 0">De <span class="strike">R$ 295</span> por <span class="num" style="color:var(--amber-soft)">R$ 27</span> à vista. Acesso imediato e bônus da live inclusos.</p>
+    <p style="color:rgba(243,233,220,.8);max-width:46ch;margin:14px auto 0">De <span class="strike">R$ 295</span> por <span class="num" style="color:var(--amber-soft)">R$ 27</span> à vista. Acesso imediato, com a aula completa inclusa.</p>
     <div style="margin-top:30px"><a href="https://pay.voompcreators.com.br/15215/offer/GxmSsw/?ch_id=2760" target="_blank" rel="noopener" class="btn btn-lg">Quero começar o Jantar Financeiro por R$ 27</a></div>
     <p class="gtag">7 dias de garantia. O risco é meu.</p>
   </div>
@@ -734,39 +726,6 @@
     }, {threshold:0.5});
     counters.forEach(function(c){ cio.observe(c); });
   }
-
-  // cronômetro regressivo até a live (17/06 20h, horário de Brasília)
-  (function(){
-    var cd = document.getElementById('countdown');
-    if(!cd) return;
-    var deadline = new Date(cd.getAttribute('data-deadline')).getTime();
-    var note = cd.nextElementSibling; // o parágrafo "Faltam pra abrir a mesa..."
-    var els = {
-      days: cd.querySelector('[data-cd="days"]'),
-      hours: cd.querySelector('[data-cd="hours"]'),
-      mins: cd.querySelector('[data-cd="mins"]'),
-      secs: cd.querySelector('[data-cd="secs"]')
-    };
-    function pad(n){ return (n < 10 ? '0' : '') + n; }
-    function showLive(){
-      cd.innerHTML = '<span class="cd-live"><span class="dot"></span> A live está acontecendo agora</span>';
-      if(note) note.innerHTML = 'Entrou agora? Você participa ao vivo. Quem não puder, a gravação fica disponível depois.';
-    }
-    function tick(){
-      var diff = deadline - new Date().getTime();
-      if(diff <= 0){ showLive(); clearInterval(timer); return; }
-      var d = Math.floor(diff / 86400000);
-      var h = Math.floor(diff % 86400000 / 3600000);
-      var m = Math.floor(diff % 3600000 / 60000);
-      var s = Math.floor(diff % 60000 / 1000);
-      els.days.textContent = pad(d);
-      els.hours.textContent = pad(h);
-      els.mins.textContent = pad(m);
-      els.secs.textContent = pad(s);
-    }
-    tick();
-    var timer = setInterval(tick, 1000);
-  })();
 
   // repassa UTMs e click-ids da URL da LP para os links de checkout (atribuição de campanha)
   (function(){
