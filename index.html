@@ -236,6 +236,15 @@
   .tcard .who b{font-size:.95rem}
   .tcard .who small{display:block;color:var(--ink-soft);font-size:.82rem}
 
+  /* ---------- FEEDBACKS (prints de WhatsApp) ---------- */
+  .fbgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start;max-width:980px;margin:0 auto}
+  .fbcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:14px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+  .fbcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+  .fbcard img{width:100%;height:auto;border-radius:14px}
+  .fbcard figcaption{display:flex;align-items:center;gap:9px;padding:14px 8px 4px;font-size:.88rem;color:var(--ink-soft)}
+  .fbcard figcaption .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);flex:none}
+  .fbcard figcaption b{color:var(--ink)}
+
   /* ---------- OFERTA / PRICING ---------- */
   .offer{background:var(--cream-2)}
   .offer-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;max-width:980px;margin:0 auto}
@@ -328,7 +337,7 @@
     section{padding:56px 0}
     nav{display:none}
     .mbar{display:none}
-    .hero-grid,.dream-grid,.cred,.offer-grid,.tcards,.frow,.author-grid{grid-template-columns:1fr;gap:28px}
+    .hero-grid,.dream-grid,.cred,.offer-grid,.tcards,.frow,.author-grid,.fbgrid{grid-template-columns:1fr;gap:28px}
     .hero-grid{gap:20px}
     .hero{padding:28px 0 20px}
     .hero-art{min-height:auto;margin-top:0}
@@ -572,6 +581,26 @@
         <q>Tínhamos 2 milhões, 70% travado num imóvel e o resto espalhado em 27 lugares. Hoje o patrimônio está mapeado e <strong>a gente sabe o que cada parte do dinheiro está fazendo.</strong></q>
         <div class="who"><div><b>Rafael &amp; Bianca</b><small>patrimônio reorganizado</small></div></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEEDBACKS REAIS ===================== -->
+<section style="background:var(--cream-2)">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Jantar Financeiro na Prática</span>
+      <h2>Casais que estão crescendo juntos</h2>
+    </div>
+    <div class="fbgrid reveal">
+      <figure class="fbcard">
+        <img src="img/depoimento-karine-heles.jpeg" alt="Print de WhatsApp: Karine com o marido e o filho à mesa com notebooks, escrevendo 'hoje teve jantar financeiro'" loading="lazy" width="1024" height="930">
+        <figcaption><span class="dot"></span><span><b>Karine &amp; Heles</b> · jantar financeiro em família</span></figcaption>
+      </figure>
+      <figure class="fbcard">
+        <img src="img/depoimento-yarla.png" alt="Print de WhatsApp: Yarla conta como foi o primeiro jantar financeiro do casal, ao lado da foto dos dois brindando à mesa com os templates preenchidos" loading="lazy" width="1536" height="1024">
+        <figcaption><span class="dot"></span><span><b>Yarla &amp; esposo</b> · primeiro jantar financeiro</span></figcaption>
+      </figure>
     </div>
   </div>
 </section>
