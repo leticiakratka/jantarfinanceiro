@@ -1,6 +1,8 @@
 wrangler.jsonc
 .assetsignore
 .git
+.wrangler
+.DS_Store
 
 # originais pesados (mantidos no repo como fonte; a página usa as versões otimizadas)
 img/capa-voomp.png
