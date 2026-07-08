@@ -1,3 +1,20 @@
 wrangler.jsonc
 .assetsignore
 .git
+
+# originais pesados (mantidos no repo como fonte; a página usa as versões otimizadas)
+img/capa-voomp.png
+img/mockup-ebook.png
+img/depoimento-yarla.png
+img/depoimento-karine-heles.jpeg
+img/IMG_3396.webp
+img/IMG_2312.webp
+img/IMG_0986.webp
+img/Fotos-99.webp
+img/Le_petit_empresarial_Leticia_26-07-2024-2272.webp
+
+# não referenciados na página
+img/IMG_1041_jpg.webp
+img/IMG_2671.webp
+img/IMG_3385_jpg.webp
+img/ChatGPT_Image_1_06_2026_17_50_44.webp
